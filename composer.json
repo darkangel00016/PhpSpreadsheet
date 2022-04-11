@@ -1,5 +1,5 @@
 {
-    "name": "phpoffice/phpspreadsheet",
+    "name": "darkangel00016/phpspreadsheet",
     "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
     "keywords": [
         "PHP",
@@ -75,7 +75,7 @@
         "markbaker/matrix": "^3.0",
         "psr/http-client": "^1.0",
         "psr/http-factory": "^1.0",
-        "psr/simple-cache": "^1.0 || ^2.0"
+        "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
