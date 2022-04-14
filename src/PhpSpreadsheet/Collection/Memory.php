@@ -49,7 +49,7 @@ class Memory implements CacheInterface
      * @throws \Psr\SimpleCache\InvalidArgumentException
      *   MUST be thrown if the $key string is not a legal value.
      */
-    public function set(string $key, mixed $value, null|int|\DateInterval $ttl = null){
+    public function set(string $key, mixed $value, null|int|\DateInterval $ttl = null): bool{
         $this->cache[$key] = $value;
 
         return true;
@@ -120,7 +120,7 @@ class Memory implements CacheInterface
      *   MUST be thrown if $values is neither an array nor a Traversable,
      *   or if any of the $values are not a legal value.
      */
-    public function setMultiple(iterable $values, null|int|DateInterval $ttl = null){
+    public function setMultiple(iterable $values, null|int|\DateInterval $ttl = null): bool{
         foreach ($values as $key => $value) {
             $this->set($key, $value, $ttl);
         }
@@ -167,5 +167,5 @@ class Memory implements CacheInterface
     {
         return array_key_exists($key, $this->cache);
     }
-    
+
 }
