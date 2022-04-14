@@ -2,7 +2,6 @@
 
 namespace PhpOffice\PhpSpreadsheet\Collection;
 
-use DateInterval;
 use Psr\SimpleCache\CacheInterface;
 
 /**
