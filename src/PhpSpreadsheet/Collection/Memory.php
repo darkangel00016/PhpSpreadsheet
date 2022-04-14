@@ -167,4 +167,5 @@ class Memory implements CacheInterface
     {
         return array_key_exists($key, $this->cache);
     }
+    
 }
